@@ -1,0 +1,18 @@
+n=int(input("enter any number"))
+nameslist=[]
+scores=[]
+result=[]
+for i in range(n):
+    name=input("enter any name")
+    score=float(input("enter score"))
+    nameslist.append([name,score])
+    scores.append(score)
+scores_list=sorted([*set(scores)])
+second_lowest=scores_list[1]
+for i in range(len(nameslist)):
+    if nameslist[i][1]==second_lowest[1]:
+        result.append(nameslist[i][0])
+result.sort()
+print('\n'.join(result))
+                                        
+
