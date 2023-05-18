@@ -1,0 +1,8 @@
+n=int(input())
+arr=map(int,input().split())
+sorted1=sorted(arr)
+set1=set(sorted1)
+arr1=list(set)
+arr1.sort(reverse=True)
+runner_up_score=arr1[1]
+print(runner_up_score)
