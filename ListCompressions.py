@@ -10,5 +10,5 @@ a=int(input("enter any number"))
 b=int(input("enter any number"))
 c=int(input("enter any number"))
 d=int(input("enter any number"))
-list1=[]
+list1=map(int,input("enter the elements").split(','))
 list_comprenssion(a,b,c,d,list1)
