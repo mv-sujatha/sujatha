@@ -1,15 +1,16 @@
-def main(num):
-    n=int(input())
-    for i in range(n):
+def exception(s):
         try:
-            a,b=map(int,input().split())
-            print(a/b)
+            a, b = map(int, (s.split()))
+            print(a//b)
         except ZeroDivisionError as e:
-            print("Error Code:",e)
+            print ("Error Code:",e)
         except ValueError as e:
             print("Error Code:",e)
-num=int(input("enter any number"))
-for i in range(num):
-    a,b=map(int,input().split())
-print(a//b)
-main(num)
+
+array = []
+n = int(input("Please input number of test cases: "))
+for _ in range(n):
+    array.append(input("Please input space separted two values: "))
+
+for str in array:
+    exception(str)
