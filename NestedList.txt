@@ -1,18 +1,20 @@
-n=int(input("enter any number"))
-nameslist=[]
-scores=[]
-result=[]
-for i in range(n):
-    name=input("enter any name")
-    score=float(input("enter score"))
-    nameslist.append([name,score])
-    scores.append(score)
-scores_list=sorted([*set(scores)])
-second_lowest=scores_list[1]
-for i in range(len(nameslist)):
-    if nameslist[i][1]==second_lowest[1]:
-        result.append(nameslist[i][0])
-result.sort()
-print('\n'.join(result))
+def nested_list(num,names_list,scores_list):
+    result=[]
+    for i in range(len(names_list)):
+        if names_list[i][1]==second_lowest:
+            result.append(names_list[i][0])
+    result.sort()
+    print('\n'.join(result))
+num=int(input("enter any number"))
+names_list=[]
+scores_list=[]
+for i in range(num):
+    names=input("enter any name")
+    scores=float(input("enter any score"))
+    names_list.append([names,scores])
+    scores_list.append(scores)
+sorted1=sorted([*set(scores_list)])
+second_lowest=sorted1[1]
+nested_list(num,names_list,scores_list)
                                         
 
