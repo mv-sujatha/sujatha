@@ -1,6 +1,6 @@
-N = int(input())
+def lists(num):
     list1=[]
-    for i in range(N):
+    for i in range(num):
         cmd,*n=input().split()
         arr=list(map(int,n))
         if cmd=='insert':
@@ -17,5 +17,6 @@ N = int(input())
             list1.pop()
         elif cmd=='reverse':
             list1.reverse()
-            
+num=int(input("enter any number"))
+lists(num)
             
