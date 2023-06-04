@@ -1,9 +1,0 @@
-A=int(input("enter any number"))
-B=int(input("enter any number"))
-list1=[]
-for num in range(A,B+1):
-    if (num**(0.5))==int(num**(0.5)):
-        square=num
-        list1.append(square)
-        count=len(list1)
-print(count)
